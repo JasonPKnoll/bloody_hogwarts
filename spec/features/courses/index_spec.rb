@@ -29,7 +29,6 @@ RSpec.describe "Courses index page" do
   it "shows number of students enrolled in each course" do
 
     visit "/courses"
-    save_and_open_page
 
     expect(page).to have_content("Enrolled Students: 2")
     expect(page).to have_content("Enrolled Students: 1")
